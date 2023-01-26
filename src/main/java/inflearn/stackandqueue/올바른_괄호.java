@@ -14,12 +14,10 @@ public class 올바른_괄호 {
         for (char c : s.toCharArray()) {
             if (c == '(') {
                 stack.push(c);
-            }
-            else {
+            } else {
                 if (stack.isEmpty()) {
                     answer = false;
-                }
-                else {
+                } else {
                     stack.pop();
                 }
             }
@@ -27,11 +25,9 @@ public class 올바른_괄호 {
         if (!stack.isEmpty()) {
             answer = false;
         }
-
         if (answer) {
             System.out.println("YES");
-        }
-        else {
+        } else {
             System.out.println("NO");
         }
     }
