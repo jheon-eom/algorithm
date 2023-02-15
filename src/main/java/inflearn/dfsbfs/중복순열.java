@@ -2,7 +2,7 @@ package inflearn.dfsbfs;
 
 import java.util.Scanner;
 
-public class 중복순열_구하기 {
+public class 중복순열 {
     static int[] pm;
     static int n;
     static int m;
