@@ -31,19 +31,20 @@ public class 씨름선수 {
         }
         System.out.println(T.solution(arr, n));
     }
+
+    static class Body implements Comparable<Body> {
+        public int h;
+        public int w;
+
+        public Body(int h, int w) {
+            this.h = h;
+            this.w = w;
+        }
+
+        @Override
+        public int compareTo(Body o) {
+            return o.h - this.h;
+        }
+    }
 }
 
-class Body implements Comparable<Body> {
-    public int h;
-    public int w;
-
-    public Body(int h, int w) {
-        this.h = h;
-        this.w = w;
-    }
-
-    @Override
-    public int compareTo(Body o) {
-        return o.h - this.h;
-    }
-}
